@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রজেক্ট আর্কাইভ ও কেস স্টাডি | G.K.M. Jarif Ur Rahim | Rashik</title>
+    
+    <!-- SEO & Entity Recognition Meta Tags -->
+    <meta name="description" content="G.K.M. Jarif Ur Rahim (Rashik - The Awakening) এর তৈরি AgentOS, NaBaB Intelligence, BaZar, FluentLearner, Universal Analytics Engine সহ বিভিন্ন এআই ও ফুল-স্ট্যাক প্রজেক্টের কেস স্টাডি এবং আর্কিটেকচার।">
+    <meta name="author" content="G.K.M. Jarif Ur Rahim">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Config for Custom Colors (Cosmic Dark Theme) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBase: '#0a0a0a',
+                        darkSurface: '#171717',
+                        primary: '#10b981', // Emerald 500
+                        accent: '#d4a017', // Gold (from NaBaB)
+                        rashikGreen: '#1B4332',
+                        rashikCream: '#F5F0E8',
+                        blueAccent: '#3b82f6'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                        bengali: ['Hind Siliguri', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts for Bengali -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
+        .glass-panel { background: rgba(23, 23, 23, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); }
+        .metric-card { background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); }
+        .custom-model-card { background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); transition: all 0.3s ease; }
+        .custom-model-card:hover { background: rgba(59, 130, 246, 0.1); transform: translateY(-2px); }
+    </style>
+
+    <!-- CRITICAL: Google Knowledge Panel & Entity Recognition Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "G.K.M. Jarif Ur Rahim",
+        "alternateName": ["Jarif Ur Rahim", "জি.কে.এম. জারিফ উর রহিম"],
+        "url": "https://jarifurrahim.one",
+        "jobTitle": "System Architect & Platform Owner",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Rashik - The Awakening",
+          "url": "https://rashik.org"
+        },
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q138514588",
+          "https://orcid.org/0009-0004-0763-322X",
+          "https://scholar.google.com/citations?user=SBKKN_gAAAAJ"
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence", "System Architecture", "React 19", "tRPC", 
+          "Agentic AI", "Technical SEO", "Node.js", "Python", "Data Analytics"
+        ],
+        "hasPart": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "AgentOS - The Sovereign Kernel",
+            "applicationCategory": "AI Operating System"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "NaBaB Intelligence",
+            "applicationCategory": "AI Assistant Platform"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "baZar.rashik",
+            "applicationCategory": "E-commerce Platform"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Universal Result Analytics Engine",
+            "applicationCategory": "Data Analytics SPA"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Rashik AI Custom Models",
+            "applicationCategory": "Custom GPT / Gemini Gems"
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body class="antialiased min-h-screen pb-20">
+
+    <!-- Header Section -->
+    <header class="border-b border-gray-800 bg-darkBase/90 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <h1 class="text-3xl font-bold text-white tracking-tight">G.K.M. Jarif Ur Rahim</h1>
+                <p class="text-primary text-sm font-medium tracking-wider uppercase mt-1">Rashik - The Awakening | System Architect</p>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-gray-400">
+                <a href="https://jarifurrahim.one" target="_blank" class="flex items-center hover:text-white transition"><i data-lucide="globe" class="w-4 h-4 mr-1"></i> jarifurrahim.one</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">
+
+        <!-- Intro -->
+        <section class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl font-bold text-white mb-6 leading-tight">ইঞ্জিনিয়ারিং এক্সিলেন্স এবং <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">কগনিটিভ আর্কিটেকচার</span></h2>
+            <p class="text-gray-400 text-lg leading-relaxed">
+                এই আর্কাইভে "Rashik - The Awakening"-এর দর্শনে নির্মিত প্রযুক্তিগত কেস স্টাডি এবং আর্কিটেকচারাল ফ্রেমওয়ার্কগুলো সংরক্ষিত রয়েছে। প্রতিটি প্রজেক্ট এমন সব সমস্যার সমাধান করেছে যা গতানুগতিক প্রযুক্তির সীমাবদ্ধতাকে ছাড়িয়ে গেছে।
+            </p>
+        </section>
+
+        <!-- Project 1: AgentOS -->
+        <article class="glass-panel rounded-2xl p-6 md:p-10 shadow-xl" id="agentos">
+            <header class="border-b border-gray-800 pb-6 mb-6">
+                <div class="flex flex-wrap justify-between items-start gap-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">AgentOS - দ্য সভরেইন কার্নেল (The Sovereign Kernel)</h3>
+                        <p class="text-gray-400 text-sm">Al Operating Layer for Website & Digital Asset Administration</p>
+                    </div>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-xs font-semibold">এআই গভর্ন্যান্স (AI Governance)</span>
+                </div>
+            </header>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="book-open" class="w-5 h-5 mr-2 text-primary"></i> উদ্ভাবনী গল্প ও লক্ষ্য</h4>
+                        <p class="text-gray-300 leading-relaxed text-sm">
+                            যেকোনো এআই এজেন্টকে স্বায়ত্তশাসন (Autonomy) দেওয়া সহজ, কিন্তু তাকে অন্ধভাবে বিশ্বাস করা বিপজ্জনক। AgentOS এমন একটি আর্কিটেকচারাল সিদ্ধান্ত যেখানে এআই-এর চিন্তন ক্ষমতা (Reasoning) এবং কার্যক্ষমতাকে (Authority) আলাদা করা হয়েছে। একটি রুল-বেসড বা এলএলএম প্ল্যানার যেকোনো কিছুর প্রস্তাব দিতে পারে, কিন্তু কার্নেল (Kernel) নিজে তা ভেরিফাই, রিস্ক-অ্যাসেস এবং স্যান্ডবক্সে টেস্ট না করা পর্যন্ত তা প্রোডাকশনে যেতে দেয় না।
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="shield-check" class="w-5 h-5 mr-2 text-primary"></i> সেফটি পাইপলাইন ও সমাধান</h4>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li><strong class="text-white">The Sandbox Dry-Run:</strong> প্রোডাকশনে পরিবর্তনের আগে একটি ক্লোন ওয়ার্কস্পেসে ড্রাই-রান করা হয়।</li>
+                            <li><strong class="text-white">Snapshot Before Execution:</strong> প্রতিটি রিয়েল এক্সিকিউশনের আগে স্বয়ংক্রিয় রোলব্যাক পয়েন্ট তৈরি হয়।</li>
+                            <li><strong class="text-white">Immutable Audit Trail:</strong> প্রতিটি সিদ্ধান্ত (অনুমোদিত বা প্রত্যাখ্যাত) বিস্তারিত লগ আকারে সংরক্ষিত থাকে।</li>
+                            <li><strong class="text-white">Action Registry:</strong> ১১টি স্পেশালিস্ট এজেন্ট (Website, SEO, Security ইত্যাদি) একটি অভিন্ন রিস্ক-মডেলে কাজ করে।</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-darkBase rounded-xl p-5 border border-gray-800">
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">টেকনিক্যাল স্ট্যাক (Tech Stack)</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Python 3.10+</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">FastAPI</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">SQLite</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Devin AI (Partner)</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">11 Min</div>
+                            <div class="text-xs text-gray-400 mt-1">Merge-Ready PR</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">42/42</div>
+                            <div class="text-xs text-gray-400 mt-1">Tests Passed</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">11</div>
+                            <div class="text-xs text-gray-400 mt-1">Specialist Agents</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">$0</div>
+                            <div class="text-xs text-gray-400 mt-1">Financial Cost</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 2: SEO Technical Report -->
+        <article class="glass-panel rounded-2xl p-6 md:p-10 shadow-xl" id="seo-report">
+            <header class="border-b border-gray-800 pb-6 mb-6">
+                <div class="flex flex-wrap justify-between items-start gap-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Technical SEO & Visibility Architecture</h3>
+                        <p class="text-gray-400 text-sm">jarifurrahim.one - Entity Recognition Implementation</p>
+                    </div>
+                    <span class="px-3 py-1 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-full text-xs font-semibold">এসইও এবং এন্টিটি (SEO & Entity)</span>
+                </div>
+            </header>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="search" class="w-5 h-5 mr-2 text-primary"></i> উদ্ঘাটন ও বাস্তবায়ন</h4>
+                        <p class="text-gray-300 leading-relaxed text-sm">
+                            jarifurrahim.one পোর্টফোলিওটি এমনভাবে তৈরি করা হয়েছে যেখানে সার্চ ইঞ্জিন ভিজিবিলিটি, এআই ডিসকভারেবিলিটি এবং এন্টিটি রিকগনিশন (Entity Recognition) কোনো "আফটারথট" নয়, বরং ফার্স্ট-ক্লাস প্রায়োরিটি। এটি গুগল নলেজ প্যানেলের জন্য স্ট্রাকচার্ড ডেটা এবং LLM-গুলোর (ChatGPT, Claude) জন্য Al-Native discoverability নিশ্চিত করে।
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">Entity Verification</strong>
+                            <p class="text-xs text-gray-400">Person Schema-তে Wikidata, ORCID, এবং Google Scholar-এর ২৫+ ভেরিফাইড প্রোফাইল লিংক যুক্ত করা হয়েছে `sameAs` প্রপার্টির মাধ্যমে।</p>
+                        </div>
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">AI-Native Discoverability</strong>
+                            <p class="text-xs text-gray-400"><code>/llms.txt</code> এবং <code>/llms-full.txt</code> স্ট্যান্ডার্ড বাস্তবায়ন করা হয়েছে যেন এআই বটগুলো ওয়েবসাইট সম্পর্কে সঠিক তথ্য পড়তে পারে।</p>
+                        </div>
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">Dynamic XML Sitemap</strong>
+                            <p class="text-xs text-gray-400">ডেটাবেস থেকে ডাইনামিক সাইটম্যাপ জেনারেট হয় ইমেজ এক্সটেনশন সহ, যা প্রতি ঘণ্টায় ক্যাশ রিফ্রেশ করে।</p>
+                        </div>
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">Advanced Crawler Policy</strong>
+                            <p class="text-xs text-gray-400">robots.txt-এ GPTBot, ClaudeBot অ্যালাও করা হয়েছে এবং কমার্শিয়াল স্ক্যাপারদের (AhrefsBot) ব্লক করা হয়েছে।</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-darkBase rounded-xl p-5 border border-gray-800">
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">টেকনিক্যাল স্ট্যাক (Tech Stack)</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">React 19</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Express 4</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">tRPC</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Drizzle ORM</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">JSON-LD</span>
+                        </div>
+                    </div>
+                    <div class="metric-card rounded-lg p-4 text-center">
+                        <div class="text-2xl font-bold text-primary">10+</div>
+                        <div class="text-xs text-gray-400 mt-1">Schema Types Implemented</div>
+                    </div>
+                     <div class="metric-card rounded-lg p-4 text-center">
+                        <div class="text-2xl font-bold text-primary">7</div>
+                        <div class="text-xs text-gray-400 mt-1">HTTP Security Headers</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 3: baZar.rashik -->
+        <article class="glass-panel rounded-2xl p-6 md:p-10 shadow-xl" id="bazar-rashik">
+            <header class="border-b border-gray-800 pb-6 mb-6">
+                <div class="flex flex-wrap justify-between items-start gap-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">baZar.rashik - AI-Powered Multi-Vendor Marketplace</h3>
+                        <p class="text-gray-400 text-sm">Market-Specific Engineering & AI Integration for Bangladesh</p>
+                    </div>
+                    <span class="px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-semibold">ই-কমার্স ও এআই (E-Commerce & AI)</span>
+                </div>
+            </header>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="shopping-bag" class="w-5 h-5 mr-2 text-primary"></i> মার্কেট গ্যাপ ও সমাধান</h4>
+                        <p class="text-gray-300 leading-relaxed text-sm">
+                            গ্লোবাল টেকনোলজি যে মার্কেটকে এড়িয়ে গেছে (যাদের ক্রেডিট কার্ড নেই, ইংরেজি প্রধান ভাষা নয়), তাদের জন্যই তৈরি করা হয়েছে baZar.rashik। এটি বাংলাদেশের মাইক্রো-এন্টারপ্রেনারদের জন্য একটি প্রোডাকশন-গ্রেড ই-কমার্স ইনফ্রাস্ট্রাকচার। কোনো ডেভেলপমেন্ট টিম ছাড়াই, Manus AI-এর সাহায্যে একজন নন-ডেভেলপার ফাউন্ডার এটি নির্মাণ করেছেন।
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-primary pl-4">
+                            <strong class="text-white text-sm">The Payment Gateway Problem:</strong>
+                            <p class="text-xs text-gray-400 mt-1">আন্তর্জাতিক পেমেন্ট গেটওয়ের অভাবে একটি কাস্টম অফলাইন পেমেন্ট ওয়ার্কফ্লো (bKash + COD) তৈরি করা হয়েছে যেখানে স্ক্রিনশট প্রুফ এবং অ্যাডমিন অ্যাপ্রুভাল সিস্টেম যুক্ত。</p>
+                        </div>
+                        <div class="border-l-2 border-primary pl-4">
+                            <strong class="text-white text-sm">The Meta Marketing Integration:</strong>
+                            <p class="text-xs text-gray-400 mt-1">একা হাতে Meta Pixel, Conversions API (CAPI), এবং Facebook Product Catalog Feed ইন্টিগ্রেট করা হয়েছে যা বড় ই-কমার্স কোম্পানিগুলোর মতই শক্তিশালী।</p>
+                        </div>
+                        <div class="border-l-2 border-accent pl-4">
+                            <strong class="text-white text-sm">Bangladesh-Specific AI Personas:</strong>
+                            <p class="text-xs text-gray-400 mt-1">কাস্টমারদের জন্য "রাশিক শপিং" এবং ভেন্ডরদের জন্য "রাশিক বিজনেস" নামে দুটি কাস্টম এআই তৈরি করা হয়েছে যা সম্পূর্ণ বাংলায় (৳ সিম্বল সহ) যোগাযোগ করে।</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-darkBase rounded-xl p-5 border border-gray-800">
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">টেকনিক্যাল স্ট্যাক (Tech Stack)</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">React 19</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Tailwind CSS 4</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Express 4</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">tRPC 11</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">MySQL / TiDB</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">80+</div>
+                            <div class="text-xs text-gray-400 mt-1">Database Tables</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">50+</div>
+                            <div class="text-xs text-gray-400 mt-1">Frontend Pages</div>
+                        </div>
+                         <div class="metric-card rounded-lg p-4 text-center col-span-2">
+                            <div class="text-2xl font-bold text-accent">৳35-50 Lakh</div>
+                            <div class="text-xs text-gray-400 mt-1">Dev Cost Avoided</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 4: FluentLearner -->
+        <article class="glass-panel rounded-2xl p-6 md:p-10 shadow-xl" id="fluentlearner">
+            <header class="border-b border-gray-800 pb-6 mb-6">
+                <div class="flex flex-wrap justify-between items-start gap-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">FluentLearner - IELTS Coaching Platform</h3>
+                        <p class="text-gray-400 text-sm">Full-Stack AI-Assisted Education Commerce Platform</p>
+                    </div>
+                    <span class="px-3 py-1 bg-pink-500/10 text-pink-400 border border-pink-500/20 rounded-full text-xs font-semibold">এডু-টেক (EdTech)</span>
+                </div>
+            </header>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="graduation-cap" class="w-5 h-5 mr-2 text-primary"></i> অপারেশনাল স্কেলিং</h4>
+                        <p class="text-gray-300 leading-relaxed text-sm">
+                            একজন সফল আইইএলটিএস (IELTS) শিক্ষকের হোয়াটসঅ্যাপ-নির্ভর ম্যানুয়াল এনরোলমেন্ট ব্যবস্থাকে মাত্র ৬ দিনে একটি স্বয়ংক্রিয় কমার্স প্ল্যাটফর্মে রূপান্তরিত করা হয়েছে। এটি কেবল একটি ওয়েবসাইট নয়, এটি একটি "বিজনেস অপারেটিং সিস্টেম" যা এনরোলমেন্ট, পেমেন্ট কনফার্মেশন এবং অ্যাডমিন কন্ট্রোল পরিচালনা করে।
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="wrench" class="w-5 h-5 mr-2 text-primary"></i> টেকনিক্যাল চ্যালেঞ্জ ও সমাধান</h4>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li><strong class="text-white">Enrollment Fragmentation:</strong> ছড়ানো ছিটানো এনরোলমেন্ট সিস্টেমকে একটি ইউনিফাইড <code>/enroll</code> রাউটে আনা হয়েছে।</li>
+                            <li><strong class="text-white">Payment Method Bug:</strong> পেমেন্ট মেথড সিলেকশন লজিক <code>methodName</code> স্ট্রিং কম্পারিজন থেকে <code>method.id</code> তে রিফ্যাক্টর করে বাগ ফিক্স করা হয়েছে।</li>
+                            <li><strong class="text-white">Admin Visibility:</strong> tRPC প্রোটেকটেড প্রসিডিওর ব্যবহার করে এনরোলমেন্ট ডেটা সরাসরি অ্যাডমিন প্যানেলে রাউট করা হয়েছে।</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-darkBase rounded-xl p-5 border border-gray-800">
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">টেকনিক্যাল স্ট্যাক (Tech Stack)</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">React 19</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">tRPC 11</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Tailwind 4</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Drizzle ORM</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Vitest</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">6 Days</div>
+                            <div class="text-xs text-gray-400 mt-1">Build Timeline</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">39/39</div>
+                            <div class="text-xs text-gray-400 mt-1">Vitest Passed</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center col-span-2">
+                            <div class="text-2xl font-bold text-primary">16,000 BDT</div>
+                            <div class="text-xs text-gray-400 mt-1">Client Delivery Price</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 5: NaBaB Intelligence -->
+        <article class="glass-panel rounded-2xl p-6 md:p-10 shadow-xl border-t-4 border-t-accent" id="nabab-intelligence">
+            <header class="border-b border-gray-800 pb-6 mb-6">
+                <div class="flex flex-wrap justify-between items-start gap-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">নবাব ইন্টেলিজেন্স (NaBaB Intelligence)</h3>
+                        <p class="text-gray-400 text-sm">Bangladesh's First Bangla-Native Agentic AI Platform</p>
+                    </div>
+                    <span class="px-3 py-1 bg-accent/10 text-accent border border-accent/20 rounded-full text-xs font-semibold">নেটিভ এআই (Native AI)</span>
+                </div>
+            </header>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="brain-circuit" class="w-5 h-5 mr-2 text-accent"></i> একটি এআই, অসীম সম্ভাবনা</h4>
+                        <p class="text-gray-300 leading-relaxed text-sm">
+                            ১৭০ মিলিয়ন মানুষের দেশ বাংলাদেশে ভাষাগত, পেমেন্ট (ডলার কার্ড) এবং কালচারাল প্রতিবন্ধকতার কারণে অনেকেই গ্লোবাল এআই প্ল্যাটফর্ম ব্যবহার করতে পারে না। নবাব ইন্টেলিজেন্স এই দেয়াল ভেঙে দিয়েছে। এটি একটি এজেন্টিক এআই প্ল্যাটফর্ম যা বাংলা বোঝে, টুলস ব্যবহার করতে পারে এবং লোকাল পেমেন্ট (bKash, Nagad) সাপোর্ট করে (১ ক্রেডিট = ১ টাকা)। এটি একটি সিঙ্গেল কন্টিনিউয়াস এআই সেশনে (Manus AI-এর সাথে) তৈরি করা হয়েছে।
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">Streaming AI Engine</strong>
+                            <p class="text-xs text-gray-400">Express Server-Sent Events (SSE) এর মাধ্যমে রিয়েল-টাইম টোকেন স্ট্রিমিং। ব্যাকএন্ড মডেল "NaBaB Universe" নামে অ্যাবস্ট্রাক্ট করা।</p>
+                        </div>
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">Atomic Credit System</strong>
+                            <p class="text-xs text-gray-400">ডেটাবেস ট্রানজেকশনের মাধ্যমে রেস-কন্ডিশন (Race conditions) ঠেকানো হয়েছে। সাইন-আপ বোনাস এবং রিচার্জ সম্পূর্ণ অ্যাটমিক।</p>
+                        </div>
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">Agentic Tool Execution</strong>
+                            <p class="text-xs text-gray-400">একাধিক ধাপে কাজ করার ক্ষমতা: <code>web_search</code>, <code>run_python</code>, <code>create_file</code>।</p>
+                        </div>
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">PWA & APK Distribution</strong>
+                            <p class="text-xs text-gray-400">Web App Manifest এবং Signed TWA APK এর মাধ্যমে প্লে-স্টোর ছাড়াই অ্যাপ ডিস্ট্রিবিউশন।</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-darkBase rounded-xl p-5 border border-gray-800">
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">টেকনিক্যাল স্ট্যাক (Tech Stack)</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">React 19</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Express SSE</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">tRPC 11</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">MySQL</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Manus Forge API</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="metric-card rounded-lg p-4 text-center border-accent/30 bg-accent/5">
+                            <div class="text-2xl font-bold text-accent">1 BDT</div>
+                            <div class="text-xs text-gray-400 mt-1">= 1 Credit</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center border-accent/30 bg-accent/5">
+                            <div class="text-2xl font-bold text-accent">24/24</div>
+                            <div class="text-xs text-gray-400 mt-1">Tests Passed</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center col-span-2 border-accent/30 bg-accent/5">
+                            <div class="text-2xl font-bold text-accent">6 DB Tables</div>
+                            <div class="text-xs text-gray-400 mt-1">Migrated in One Session</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 6: Cognitive Studio Lab -->
+        <article class="glass-panel rounded-2xl p-6 md:p-10 shadow-xl" id="cognitive-studio">
+            <header class="border-b border-gray-800 pb-6 mb-6">
+                <div class="flex flex-wrap justify-between items-start gap-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Cognitive Studio Lab (v6.0)</h3>
+                        <p class="text-gray-400 text-sm">Browser-based AI Video Compositing & Rendering Engine</p>
+                    </div>
+                    <span class="px-3 py-1 bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded-full text-xs font-semibold">ভিডিও ইঞ্জিনিয়ারিং (Video Engineering)</span>
+                </div>
+            </header>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="video" class="w-5 h-5 mr-2 text-primary"></i> ল্যাটারাল থিংকিং এবং সিকিউরিটি বাইপাস</h4>
+                        <p class="text-gray-300 leading-relaxed text-sm">
+                            অফলাইন অবস্থায় মোবাইল ব্রাউজারের সিকিউরিটি পলিসি ক্যামেরা অ্যাক্সেস দেয় না। এই সমস্যার সমাধানে লাইভ ক্যামেরার বদলে আগে থেকে রেকর্ড করা ভিডিও আপলোড করে প্রসেস করার পদ্ধতি ব্যবহার করা হয়েছে। কোনো ক্লাউড বা ইন্টারনেট ছাড়াই ব্রাউজারের ভেতরেই ভিডিওর ব্যাকগ্রাউন্ড রিমুভ, 3D হলোগ্রাফিক স্টুডিও রেন্ডার এবং অডিও সিঙ্ক করা সম্ভব হয়েছে।
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="cpu" class="w-5 h-5 mr-2 text-primary"></i> 3 Hours of Active Engineering</h4>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li><strong class="text-white block">The 61% RAM Freeze:</strong> মোবাইল ব্রাউজারে র‍্যাম ফুল হয়ে যাওয়ার সমস্যা সমাধানে একটি "Smart Agentic Watchdog" তৈরি করা হয়েছে যা প্রসেসিং থামিয়ে ৭ সেকেন্ডের কুলডাউন দিয়ে আবার কাজ শুরু করে।</li>
+                            <li><strong class="text-white block">The 99% Snatch Hack:</strong> এনকোডার স্টারভেশনের কারণে ফাইল করাপ্ট হওয়া ঠেকাতে ৯৯% হলেই ফোর্স-সেভ লজিক প্রয়োগ করা হয়েছে।</li>
+                            <li><strong class="text-white block">Audio Muxing:</strong> Canvas আউটপুটে অডিও সিঙ্ক ঠিক রাখতে WebM (VP9 Codec) এবং <code>AudioContext</code> ব্যবহার করা হয়েছে।</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-darkBase rounded-xl p-5 border border-gray-800">
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">টেকনিক্যাল স্ট্যাক (Tech Stack)</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">HTML5 Canvas API</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">AudioContext</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">MediaRecorder</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">WebM VP9 Codec</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">MediaPipe AI</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">82%</div>
+                            <div class="text-xs text-gray-400 mt-1">Size Reduction</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">35 MB</div>
+                            <div class="text-xs text-gray-400 mt-1">Final HD Output</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center col-span-2">
+                            <div class="text-2xl font-bold text-primary">0%</div>
+                            <div class="text-xs text-gray-400 mt-1">Internet Required (Offline)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 7: Universal Result Analytics Engine -->
+        <article class="glass-panel rounded-2xl p-6 md:p-10 shadow-xl" id="universal-analytics">
+            <header class="border-b border-gray-800 pb-6 mb-6">
+                <div class="flex flex-wrap justify-between items-start gap-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Universal Result Analytics Engine (v2.0)</h3>
+                        <p class="text-gray-400 text-sm">Browser-based Offline CSV Parsing & Analytics SPA</p>
+                    </div>
+                    <span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-full text-xs font-semibold">ডেটা অ্যানালিটিক্স (Data Analytics)</span>
+                </div>
+            </header>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2 text-primary"></i> বটলনেক (Bottleneck) ও সমাধান</h4>
+                        <p class="text-gray-300 leading-relaxed text-sm">
+                            ডিপার্টমেন্টাল পরীক্ষার বিশাল এবং অগোছালো রেজাল্ট শিট থেকে নির্দিষ্ট ডেটা (ফেল বা অনুপস্থিত শিক্ষার্থী) ম্যানুয়ালি বের করার দীর্ঘ ও ভুল-প্রবণ কাজটিকে সম্পূর্ণ অটোমেট করা হয়েছে। Google AI-এর সাথে মাত্র ২ ঘণ্টার স্প্রিন্টে তৈরি এই ইঞ্জিনটি অফলাইনে ব্রাউজারেই হাজার হাজার ডেটা প্রসেস করতে পারে।
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">Autonomous Data Detection</strong>
+                            <p class="text-xs text-gray-400">CSV ফাইল থেকে স্বয়ংক্রিয়ভাবে সেমিস্টার, সাবজেক্ট এবং কলামগুলো স্ক্যান করে চিনে নেয়। কোনো কিছু হার্ডকোড করার প্রয়োজন নেই।</p>
+                        </div>
+                        <div class="bg-darkBase p-4 rounded-lg border border-gray-800">
+                            <strong class="text-white block mb-1 text-sm">Dynamic Logic Gate</strong>
+                            <p class="text-xs text-gray-400">রেজেক্স (Regex) দিয়ে হিউম্যান এরর ক্লিন করে এবং বেস মার্কের (১০, ২০, ৩০) উপর ভিত্তি করে ডায়নামিকভাবে ৪০% পাস মার্ক ক্যালকুলেট করে।</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-darkBase rounded-xl p-5 border border-gray-800">
+                        <h4 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">টেকনিক্যাল স্ট্যাক (Tech Stack)</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">HTML5</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Vanilla JS (ES6)</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">PapaParse.js</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Tailwind CSS</span>
+                            <span class="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Google AI</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">&lt; 3 Sec</div>
+                            <div class="text-xs text-gray-400 mt-1">Processing Time</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">100%</div>
+                            <div class="text-xs text-gray-400 mt-1">Logic Accuracy</div>
+                        </div>
+                        <div class="metric-card rounded-lg p-4 text-center col-span-2">
+                            <div class="text-2xl font-bold text-primary">99%</div>
+                            <div class="text-xs text-gray-400 mt-1">Time Saved Per Semester</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Custom AI Models Section -->
+        <section class="mt-20 border-t border-gray-800 pt-16">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4 flex items-center justify-center"><i data-lucide="bot" class="w-8 h-8 mr-3 text-blueAccent"></i> কাস্টম এআই মডেল (Custom AI Models)</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    জেনারেটিভ এআই-এর শুরুর দিকে কৌতূহলবশত প্রম্পট ইঞ্জিনিয়ারিং এবং ইনস্ট্রাকশন টিউনিংয়ের মাধ্যমে তৈরি কিছু নিজস্ব মডেল (Custom GPT & Gemini Gems)। இவை মূলত "Intelligence vs. Soul" বিতর্কের জন্য ডেটা-ড্রিভেন এবং লজিক্যাল আর্গুমেন্ট করতে সক্ষম।
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Model 1 -->
+                <a href="https://gemini.google.com/gem/1ZoXYuyw5slAx52j0yZU5ytcjMFH3-PBa?usp=sharing" target="_blank" class="custom-model-card block rounded-xl p-6 text-center cursor-pointer">
+                    <div class="w-14 h-14 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center mx-auto mb-4 border border-blue-500/30">
+                        <i data-lucide="message-square-text" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-2">r(A)sh(I)k | The Intellect</h3>
+                    <p class="text-xs text-gray-400 mb-4">Gemini Gem • A hyper-rational debater that uses pure logic and data to counter-argue any topic.</p>
+                    <span class="text-blue-400 text-xs font-semibold flex items-center justify-center hover:underline">মডেলটি দেখুন <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></span>
+                </a>
+
+                <!-- Model 2 -->
+                <a href="https://gemini.google.com/gem/1nSfr1qaoP1cDTbOD_rgDsdvIxxIj-_z0?usp=sharing" target="_blank" class="custom-model-card block rounded-xl p-6 text-center cursor-pointer">
+                    <div class="w-14 h-14 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center mx-auto mb-4 border border-blue-500/30">
+                        <i data-lucide="scale" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-2">Rashik | Ultimate Debater</h3>
+                    <p class="text-xs text-gray-400 mb-4">Gemini Gem • সম্পূর্ণ যুক্তি, প্রমাণ ও নিরপেক্ষ বিশ্লেষণভিত্তিক একটি মডেল যা দর্শন ও বিজ্ঞানের দ্বন্দ্ব নিয়ে কাজ করে।</p>
+                    <span class="text-blue-400 text-xs font-semibold flex items-center justify-center hover:underline">মডেলটি দেখুন <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></span>
+                </a>
+
+                <!-- Model 3 -->
+                <a href="https://chatgpt.com/g/g-691c6c3298f08191a2e24dda09a02ff5-r-a-sh-i-k-ultimate-debater" target="_blank" class="custom-model-card block rounded-xl p-6 text-center cursor-pointer">
+                    <div class="w-14 h-14 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center mx-auto mb-4 border border-blue-500/30">
+                        <i data-lucide="sparkles" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-2">r(A)sh(I)k | Ultimate Debater</h3>
+                    <p class="text-xs text-gray-400 mb-4">ChatGPT Custom GPT • Agentic Rashik হিসেবে মানবের সোল বনাম ইন্টেলিজেন্স বিতর্কে ঠাণ্ডা মাথায় তথ্যনির্ভর বিশ্লেষণ করে।</p>
+                    <span class="text-blue-400 text-xs font-semibold flex items-center justify-center hover:underline">মডেলটি দেখুন <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-800 bg-darkBase py-8 text-center mt-12">
+        <p class="text-gray-500 text-sm">© 2026 G.K.M. Jarif Ur Rahim | Rashik - The Awakening. সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
