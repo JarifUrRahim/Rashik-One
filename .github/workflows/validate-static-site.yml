@@ -1,0 +1,19 @@
+name: Validate Static Showcase
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate public discovery and evidence links
+        run: bash scripts/validate-static-site.sh
