@@ -6,9 +6,14 @@ test -f robots.txt
 test -f sitemap.xml
 test -f assets/styles.css
 test -f assets/lucide.min.js
+test -f knowledge/data.json
+test -f knowledge/index.html
 
 grep -q '<link rel="canonical" href="https://lab.rashik.org/">' index.html
 grep -q 'Rashik - The Awakening' index.html
+grep -q 'href="/knowledge/"' index.html
+grep -q 'https://lab.rashik.org/knowledge/' sitemap.xml
+grep -q 'FAQPage' knowledge/index.html
 grep -q 'https://lab.rashik.org/sitemap.xml' robots.txt
 grep -q 'https://lab.rashik.org/' sitemap.xml
 grep -q 'https://github.com/JarifUrRahim/AgentOS' index.html

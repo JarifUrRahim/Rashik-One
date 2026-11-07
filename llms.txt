@@ -1,0 +1,27 @@
+# Rashik Lab — Q&A knowledge archive
+
+This public archive contains four source-traceable Q&A entries attributed in their supplied PDFs to G. K. M. Jarif Ur Rahim. The entries describe his views, a proposed philosophical framework, a conceptual AI-safety proposal, and an initiative described by the source PDFs; they are not an independent fact-check. Speculative or owner-reported claims are labelled as such.
+
+## Identity and attribution
+- Public name: G. K. M. Jarif Ur Rahim
+- Public title used here: Cognitive System Architect
+- Portfolio: https://jarifurrahim.one/
+- GitHub: https://github.com/JarifUrRahim
+- User-provided Google Knowledge Graph reference: https://www.google.com/search?kgmid=/g/11z1lszj5x (association not independently verified)
+
+## Q&A archive
+- Human-readable page: https://lab.rashik.org/knowledge/
+- Structured JSON dataset: https://lab.rashik.org/knowledge/data.json
+- Zero-Trust API Architecture: https://lab.rashik.org/knowledge/#zero-trust-api-architecture
+- Quantum Observer Framework: https://lab.rashik.org/knowledge/#quantum-observer-framework
+- Decentralised trust: https://lab.rashik.org/knowledge/#decentralised-trust
+- Rashik – The Awakening: https://lab.rashik.org/knowledge/#rashik-the-awakening
+
+## Original source PDFs
+- https://lab.rashik.org/knowledge/sources/TellmemoreabouthisZero-TrustAPIArchitecture.pdf
+- https://lab.rashik.org/knowledge/sources/WhatishisQuantumObserverFramework.pdf
+- https://lab.rashik.org/knowledge/sources/Whatarehisviewsondecentralisedtrust.pdf
+- https://lab.rashik.org/knowledge/sources/WhatisRashik-TheAwakeningabout_.pdf
+
+## Limits
+This discovery file and the page do not guarantee that Google, any other search or AI-answer product, or any model-training system will crawl, index, retrieve, or learn this material.

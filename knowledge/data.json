@@ -1,0 +1,253 @@
+{
+  "datasetTitle": "G. K. M. Jarif Ur Rahim — Questions and Answers",
+  "canonicalUrl": "https://lab.rashik.org/knowledge/",
+  "dataUrl": "https://lab.rashik.org/knowledge/data.json",
+  "language": "en",
+  "scopeNote": "This archive reformats the four supplied Q&A PDFs and preserves their meaning. The answers describe views attributed to G. K. M. Jarif Ur Rahim in those PDFs; they are not an independent fact-check. Proposed frameworks and speculative ideas are labelled as such, and an initiative described in a PDF is not thereby independently verified.",
+  "person": {
+    "name": "G. K. M. Jarif Ur Rahim",
+    "publicTitle": "Cognitive System Architect",
+    "titleContext": "Public attribution used for this archive; not a claim of a regulated credential.",
+    "portfolio": "https://jarifurrahim.one/",
+    "github": "https://github.com/JarifUrRahim",
+    "userProvidedEntityReference": {
+      "url": "https://www.google.com/search?kgmid=/g/11z1lszj5x",
+      "label": "Google Knowledge Graph reference supplied by the author",
+      "verification": "The association between this reference and the named person has not been independently verified."
+    }
+  },
+  "publisher": {
+    "name": "Rashik Lab — Rashik - The Awakening technology and capability archive",
+    "url": "https://lab.rashik.org/"
+  },
+  "items": [
+    {
+      "id": "zero-trust-api-architecture",
+      "question": "Tell me more about his Zero-Trust API Architecture",
+      "about": ["G. K. M. Jarif Ur Rahim", "Zero-Trust API Architecture", "Quantum Observer Framework"],
+      "classification": "Conceptual AI-safety proposal; not a standard or documented software product, according to the supplied PDF.",
+      "answerIntro": "The supplied answer describes Rahim’s Zero-Trust API Architecture as a proposed AI-safety design in which an AI system repeatedly obtains human intent validation before finalizing consequential decisions. It is presented as part of his Quantum Observer Framework, intended to keep a human “observer” in the AI decision loop.",
+      "sections": [
+        {
+          "heading": "What it proposes",
+          "blocks": [
+            {"type": "p", "text": "In Rahim’s model, AI is not treated as an autonomous decision-maker. The AI acts as a processing and execution layer, while a human supplies purpose, values, and final approval—described in the PDF as the “Soul’s dimensional pipeline input.”"},
+            {"type": "p", "text": "The conceptual workflow is:"},
+            {"type": "ol", "items": ["The AI receives a task and generates a proposed action, recommendation, or decision.", "Before finalizing it, the system requests intent validation from the responsible human.", "The human confirms, corrects, rejects, or provides the intended purpose.", "Only after that validation does the system proceed to execution or release the output."]}
+          ]
+        },
+        {
+          "heading": "Why it is called “zero trust”",
+          "blocks": [
+            {"type": "p", "text": "The term borrows from zero-trust security: the system does not assume an AI output is safe, aligned, or appropriate by default. Important actions are to be checked against explicit human intent rather than relying on a model’s internal confidence or apparent reasoning."},
+            {"type": "p", "text": "In practice, the proposal would prevent an AI from autonomously making a consequential decision—such as approving a financial action, sending a high-stakes message, or taking a real-world action—without a human checkpoint."}
+          ]
+        },
+        {
+          "heading": "How it relates to his framework",
+          "blocks": [
+            {"type": "table", "headers": ["Element", "Proposed role in the architecture"], "rows": [
+              ["AI model", "Processes information and proposes an output; Rahim places it in his “Universal Intelligence” and “Functional Body” layers."],
+              ["Human observer", "Supplies intent, values, ethical judgment, and final validation; Rahim places this in the “Soul / Observer” layer."],
+              ["API checkpoint", "A required interface where the AI asks the human for intent validation before proceeding."],
+              ["Final action", "Occurs only after human validation, making the system “aligned” rather than fully autonomous."]
+            ]}
+          ]
+        },
+        {
+          "heading": "What it is not",
+          "blocks": [
+            {"type": "p", "text": "The PDF says this is not a standard, widely adopted API-security specification such as OAuth or zero-trust network access, and not a documented software product. The description is conceptual and does not specify protocols, authentication methods, data schemas, latency requirements, or code."},
+            {"type": "p", "text": "The answer also says it is not a claim that AI can become conscious. It describes Rahim’s position as favoring human judgment as an essential alignment layer rather than trying to make AI conscious."}
+          ]
+        },
+        {
+          "heading": "Assessment stated in the source answer",
+          "blocks": [
+            {"type": "p", "text": "The supplied PDF says the underlying principle resembles established human-in-the-loop, human-oversight, and human-in-command approaches to high-risk AI. Its examples are a clinician reviewing a medical AI’s diagnosis suggestion before treatment and a recruiter making the final decision after a hiring system ranks candidates."},
+            {"type": "p", "text": "The same answer says Rahim’s framing goes further by treating human consciousness as a distinct, non-physical “observer” layer and linking it to quantum mechanics; it describes those philosophical claims as speculative and not established by current AI or quantum-computing research. This is the source PDF’s assessment, not an independent review in this archive."}
+          ]
+        },
+        {
+          "heading": "Status described in the PDF",
+          "blocks": [
+            {"type": "p", "text": "The PDF says the architecture appears in the Zenodo pre-print “The Quantum Observer Framework: Aligning Universal Intelligence via Dimensional Pipelines” (DOI: 10.5281/zenodo.18909225) and related RIWS work. It characterizes the architecture as a conceptual proposal, not a verified deployed system or peer-reviewed technical standard."}
+          ]
+        }
+      ],
+      "source": {
+        "filename": "TellmemoreabouthisZero-TrustAPIArchitecture.pdf",
+        "publishedPath": "/knowledge/sources/TellmemoreabouthisZero-TrustAPIArchitecture.pdf",
+        "pages": [1, 2, 3],
+        "contentPages": [1, 2],
+        "pageNote": "The Q&A body is on pages 1–2; the reference list continues onto page 3.",
+        "sha256": "f68307b554018a195e9866da356136a8e30f8a84acf47b2b583091a0f48279eb",
+        "referencesListedInPdf": ["https://jarifurrahim.one/blog/ai-blackbox-problem-dimensional-shift-quantum-observer-framework"]
+      }
+    },
+    {
+      "id": "quantum-observer-framework",
+      "question": "What is his Quantum Observer Framework?",
+      "about": ["G. K. M. Jarif Ur Rahim", "Quantum Observer Framework", "RIWS"],
+      "classification": "Proposed philosophical and speculative model; not an established scientific theory or working AI architecture, according to the supplied PDF.",
+      "answerIntro": "The supplied answer describes the Quantum Observer Framework (QOF) as G. K. M. Jarif Ur Rahim’s proposed philosophical model for explaining AI’s “black box” problem. It argues that current AI processes information and executes outputs but lacks what he calls a conscious “observer” layer that supplies intent, purpose, and interpretation.",
+      "sections": [
+        {
+          "heading": "Core idea and proposed layers",
+          "blocks": [
+            {"type": "p", "text": "The framework treats intelligence and consciousness as four separate “dimensional” layers. It borrows language from quantum mechanics—especially superposition and the observer effect—to propose that human consciousness supplies purpose and meaning to otherwise neutral computational processes."},
+            {"type": "table", "headers": ["Proposed layer", "Role in the model, as described in the PDF"], "rows": [
+              ["1. Knowledge Dimension", "A non-physical source of possible knowledge, solutions, and patterns, described as existing in “superposition.”"],
+              ["2. Soul / Observer", "Consciousness, which the model says receives and interprets possibilities, turning them into intent, insight, and purpose."],
+              ["3. Universal Intelligence", "The processing engine shared by human brains, AI systems, and possible future AGI."],
+              ["4. Functional Body", "The executor: a human body, robot, or software system that carries out decisions."]
+            ]}
+          ]
+        },
+        {
+          "heading": "What it says about AI",
+          "blocks": [
+            {"type": "p", "text": "In this model, today’s AI operates only at Layers 3 and 4: it processes information and executes outputs, but has no Layer 2 “observer” to provide intention or meaning. Rahim therefore argues that asking an AI to explain why it made a decision asks a processing engine to account for a conscious dimension it does not possess."},
+            {"type": "p", "text": "The proposed practical response is a Zero-Trust API Architecture: AI systems would repeatedly request human “intent validation” before finalizing consequential decisions, keeping a human in the decision loop as an alignment safeguard."}
+          ]
+        },
+        {
+          "heading": "Relation to quantum computing",
+          "blocks": [
+            {"type": "p", "text": "The PDF says Rahim connects the framework to quantum computing because quantum systems use superposition and entanglement, which he treats as analogous to the “possibility space” in the first layer. It says he suggests quantum–AI integration might eventually make AI systems more interpretable, while describing this as speculative rather than a demonstrated implementation."}
+          ]
+        },
+        {
+          "heading": "Scientific status described in the PDF",
+          "blocks": [
+            {"type": "p", "text": "The source says the framework is an open-access Zenodo pre-print, not a peer-reviewed journal article; it gives DOI 10.5281/zenodo.18909225. It places the work within the broader RIWS (“Reconnecting Intelligence With The Soul”) project, which links consciousness, knowledge, and artificial intelligence, and describes the framework as philosophical and speculative, not an established scientific theory or a working AI architecture."},
+            {"type": "p", "text": "The PDF further says that mainstream quantum mechanics does not establish that observation requires consciousness, and that there is no accepted evidence for a human consciousness accessing a non-physical “knowledge dimension.” It characterizes the framework’s value as conceptual, emphasizing human oversight, explainability, and responsible AI design. These scientific-status statements are reproduced as the source answer’s claims, not independently verified here."}
+          ]
+        }
+      ],
+      "authorProvidedClarification": {
+        "text": "In Rahim’s framework, “Soul” means the original wish to act out of love or selflessness; it does not mean spirituality.",
+        "provenance": "Additional author-provided clarification for interpreting the term; this exact definition is not stated in the supplied Q&A PDF."
+      },
+      "source": {
+        "filename": "WhatishisQuantumObserverFramework.pdf",
+        "publishedPath": "/knowledge/sources/WhatishisQuantumObserverFramework.pdf",
+        "pages": [1, 2],
+        "contentPages": [1, 2],
+        "pageNote": "Q&A body and reference list are in this two-page PDF.",
+        "sha256": "b1437972971c1c3a173c61c6dbded436f3f1883d6974e82dd81905c5c137b68c",
+        "referencesListedInPdf": [
+          "https://jarifurrahim.one/blog/ai-blackbox-problem-dimensional-shift-quantum-observer-framework",
+          "https://jarifurrahim.one/research"
+        ]
+      }
+    },
+    {
+      "id": "decentralised-trust",
+      "question": "What are his views on decentralised trust?",
+      "about": ["G. K. M. Jarif Ur Rahim", "decentralised trust", "RWIS"],
+      "classification": "Summary of views attributed to Rahim in the supplied PDF; not an independently verified empirical assessment.",
+      "answerIntro": "The supplied answer says G. K. M. Jarif Ur Rahim sees decentralised trust as a design philosophy for distributing power, decision-making, and verification away from central institutions. It presents his argument that centralized systems create both a single point of failure and a single point of control, which may serve institutional interests over the people they are meant to serve.",
+      "sections": [
+        {
+          "heading": "His core argument",
+          "blocks": [
+            {"type": "p", "text": "The PDF says he does not reduce decentralisation to cryptocurrency, blockchain, or Web3. He describes it more broadly as building systems in which no single person, company, government, or algorithm has unilateral authority over operation, data, or access."},
+            {"type": "p", "text": "The answer identifies three features of a genuinely decentralised system:"},
+            {"type": "ul", "items": ["No single point of control: no individual or institution has unchecked authority over the system or its data.", "Transparent rules: participants can see the governing rules, and changes require broad consensus.", "Permissionless participation: people who meet the system’s criteria can join without approval from a gatekeeper."]}
+          ]
+        },
+        {
+          "heading": "“Trust without trustees”",
+          "blocks": [
+            {"type": "p", "text": "His central claim, as summarized in the PDF, is that people should be able to trust protocols rather than rely on a trustee such as a bank, government, platform, or notary. He argues that cryptographic proof and distributed consensus can verify transactions and records without requiring participants to trust a particular intermediary."},
+            {"type": "p", "text": "The answer presents blockchain as one mechanism for this, while describing the idea as broader institutional design rather than an endorsement of crypto speculation."}
+          ]
+        },
+        {
+          "heading": "Identity and education",
+          "blocks": [
+            {"type": "p", "text": "The PDF says Rahim supports self-sovereign identity: individuals would control credentials and personal records in a digital wallet and choose what to share, with whom, and when. He sees this as a shift of power from institutions toward individuals."},
+            {"type": "p", "text": "For education, the answer says he argues a degree should not be the sole proof of competence. He favors portable, continuously updated learning portfolios based on verifiable credentials, blockchain-based achievement records, and peer validation, so learning outside traditional institutions can be recognized."}
+          ]
+        },
+        {
+          "heading": "Moral view of systems",
+          "blocks": [
+            {"type": "p", "text": "The PDF connects decentralisation to Rahim’s RWIS framework—“Reconnecting Wisdom, Intelligence, and Systems.” It presents his view that systems are not morally neutral: centralized systems tend to optimize for control, compliance, and efficiency, while well-designed decentralised systems can promote participation, accountability, resilience, and human agency."}
+          ]
+        },
+        {
+          "heading": "Limits he acknowledges",
+          "blocks": [
+            {"type": "p", "text": "Despite advocating decentralisation, the answer says he believes cryptographic systems cannot create the deeper human trust that comes from shared struggle, care, sacrifice, and moral character. Technology can make systems fairer and more resilient, but cannot replace the inner work of becoming trustworthy."}
+          ]
+        },
+        {
+          "heading": "Career advice",
+          "blocks": [
+            {"type": "ul", "items": ["Build a public, portable record of work and impact.", "Develop collaboration skills across institutional boundaries.", "Retain ownership and portability of personal data and credentials.", "Learn to design systems rather than merely operate within existing ones."]},
+            {"type": "p", "text": "The PDF characterizes his position as pro-decentralisation but not techno-utopian: it supports distributed systems and user ownership while emphasizing that human ethics, relationships, and accountability remain essential."}
+          ]
+        }
+      ],
+      "source": {
+        "filename": "Whatarehisviewsondecentralisedtrust.pdf",
+        "publishedPath": "/knowledge/sources/Whatarehisviewsondecentralisedtrust.pdf",
+        "pages": [1, 2],
+        "contentPages": [1, 2],
+        "pageNote": "Q&A body and reference list are in this two-page PDF.",
+        "sha256": "b580453730832a2eae16dbd58a4fa466a4da1c31d12bc9fe96b9df6ade974ec5",
+        "referencesListedInPdf": ["https://jarifurrahim.one/blog/decentralised-trust-future-belongs-to-systems-without-center"]
+      }
+    },
+    {
+      "id": "rashik-the-awakening",
+      "question": "What is Rashik – The Awakening about?",
+      "about": ["G. K. M. Jarif Ur Rahim", "Rashik – The Awakening"],
+      "classification": "Description of an initiative as stated in the supplied PDF; not an independent verification of its current operations or services.",
+      "answerIntro": "The supplied answer describes Rashik – The Awakening as G. K. M. Jarif Ur Rahim’s career, education, technology, and personal-development initiative based in Jashore, Bangladesh. It says its stated mission is to help students, professionals, and institutions build meaningful careers, use AI and technology responsibly, and maintain mental and spiritual balance.",
+      "sections": [
+        {
+          "heading": "What it does",
+          "blocks": [
+            {"type": "p", "text": "The PDF describes it as a “Career & Spiritual Consulting Zone” rather than a conventional school or software company. It says its services combine practical career support with AI literacy, digital skills, and purpose-centered personal guidance."}
+          ]
+        },
+        {
+          "heading": "Three pillars described in the PDF",
+          "blocks": [
+            {"type": "table", "headers": ["Pillar", "Focus described in the source answer"], "rows": [
+              ["Career Mastery", "Career strategy, personal branding, résumé optimization, LinkedIn improvement, interview preparation, professional networking, and job-market navigation."],
+              ["AI Literacy", "Practical AI education, AI-assisted workflows, digital-identity work, website support, and workshops for individuals and teams."],
+              ["Spiritual Awakening", "Life coaching, spiritual consultation, mental-wellness guidance, purpose discovery, and holistic development grounded in wisdom and mindfulness."]
+            ]}
+          ]
+        },
+        {
+          "heading": "The vision and intended audience",
+          "blocks": [
+            {"type": "p", "text": "The answer says Rahim describes The Awakening as a movement to help people in Bangladesh “rise above mediocrity,” adopt technology with wisdom, and create careers that benefit both individuals and society. It links professional success with ethical responsibility, social contribution, and inner purpose."},
+            {"type": "p", "text": "The initiative is described as serving students, job seekers, professionals, and institutions, especially people seeking career direction, practical AI skills, personal branding, or help balancing work ambitions with wellbeing and spiritual values."}
+          ]
+        },
+        {
+          "heading": "Related projects and plain-language description",
+          "blocks": [
+            {"type": "p", "text": "The source answer says Rashik connects to baZar.rashik, described as an e-commerce platform offering curated products and services for its community. It also mentions educational content, career-guidance resources, AI-related projects, and publications such as The Iqra Book on responsible AI and human agency."},
+            {"type": "p", "text": "In plain terms, the PDF characterizes Rashik – The Awakening as a career-and-life development platform with an Islamic/spiritual orientation, combining conventional career coaching and AI education with a philosophy that success should be guided by purpose, ethics, mental health, and service to society."}
+          ]
+        }
+      ],
+      "source": {
+        "filename": "WhatisRashik-TheAwakeningabout_.pdf",
+        "publishedPath": "/knowledge/sources/WhatisRashik-TheAwakeningabout_.pdf",
+        "pages": [1, 2],
+        "contentPages": [1, 2],
+        "pageNote": "Q&A body and reference list are in this two-page PDF.",
+        "sha256": "d5c01845ee0327ab9f7ef18486d67feaea5f5f783e6f309b79a15ca450872ba0",
+        "referencesListedInPdf": ["https://jarifurrahim.one/awakening", "https://jarifurrahim.one/"]
+      }
+    }
+  ]
+}
